@@ -1,5 +1,5 @@
 {
-    "name": "roave/zf2-for-1",
+    "name": "joacub/zf2-for-1",
     "description": "Compatibility layer for ZF1 application allowing usage of ZF2 features",
     "type": "library",
     "keywords": [
