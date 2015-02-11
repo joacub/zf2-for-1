@@ -33,7 +33,8 @@ class Module implements
 
     public function onDispatchError(MvcEvent $e)
     {
-        if ($e->getError() != Application::ERROR_ROUTER_NO_MATCH) {
+        $response = $e->getResponse();
+        if (!method_exists($response, 'getStatusCode') || $response->getStatusCode() !== 404) {
             return;
         }
 
